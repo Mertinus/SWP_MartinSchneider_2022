@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS_Reset.css">
+    <style>   
+        div {
+            border-style: solid;
+            border-width: 3px;
+        }     
+        .header {
+            background-color: lightblue;
+            position: static;
+            width: 200px;
+            height: 400px;
+            margin-left: 40px;
+            margin-top: 40px;
+        }        
+        .headerTop {
+            background-color: black;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            left: -5px;
+            top: -5px;
+        }
+        .headerBottom {
+            background-color: green;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 200px;
+            top: 400px;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .box {
+            background-color: green;
+            margin: 5px;
+            width: 40px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="headerTop">
+        </div>
+        <div class="headerBottom">
+        </div>
+    </div>
+    <div class="content">
+        <div class="box">
+
+        </div>
+        <div class="box">
+
+        </div>
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>
