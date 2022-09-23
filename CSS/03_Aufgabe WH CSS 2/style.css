@@ -1,0 +1,42 @@
+
+.flexTop {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+.flexTopBig {
+    width:200px;
+    height: 200px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.flexLeftSmall {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    position: relative;
+    left: 150px;
+}
+.flexRightSmall {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    position: relative;
+}
+.bottomRight {
+    width: 140px;
+    height: 140px;
+    background-color: greenyellow;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.smallBottomRight {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
