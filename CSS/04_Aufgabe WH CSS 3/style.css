@@ -1,0 +1,45 @@
+div {
+    border-color: black;
+    border-width: 2px;
+    border-style:solid;
+}
+.header {
+    display: flex;
+    align-content: space-between;
+}
+.greenBox {
+    background-color: greenyellow;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.greenCenterBox {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+}
+.rightBottom {
+    background-color: lightblue;
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.upBlackBox {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+.downBlackBox {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 95px;
+    right: 25px;
+}
