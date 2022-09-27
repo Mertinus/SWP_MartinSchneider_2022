@@ -1,0 +1,54 @@
+div {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+body {
+    display: flex;
+    align-content: space-between;
+}
+.upperLeftBox {
+    background-color: lightblue;
+    width: 40vw;
+    height: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.centeredBlueBox {
+    background-color: blue;
+    width: 8vw;
+    height: 8vw;
+}
+.rightBottomPurpleBox {
+    background-color: purple;
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    top: 36vw;
+    left: 31.25vw;
+}
+.header {
+    margin: 2vw;
+    width: 60vw;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.greenBox {
+    background-color: greenyellow;
+    width: 12vw;
+    height: 12vw;
+    margin: 4vw;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.orangeBox {
+    background-color: orange;
+    width: 5vw;
+    height: 5vw;
+    position: relative;
+    top: 1.5px;
+    right: 1.5px;
+}

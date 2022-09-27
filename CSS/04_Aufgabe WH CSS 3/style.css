@@ -1,7 +1,7 @@
 div {
     border-color: black;
     border-width: 2px;
-    border-style:solid;
+    border-style: solid;
 }
 .header {
     display: flex;
@@ -13,7 +13,7 @@ div {
     height: 200px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 20px;
 }
 .greenCenterBox {
@@ -42,4 +42,7 @@ div {
     position: relative;
     top: 95px;
     right: 25px;
+}
+@media (max-height: 450px) {
+    .rightBottom { display: none; }
 }
