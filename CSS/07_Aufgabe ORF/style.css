@@ -3,7 +3,7 @@
     font-feature-settings: "liga", "kern";
 }
 .navigation {
-    background-color: rgb(192, 0, 0);
+    background-color: rgb(171, 0, 0);
     width: 100vw;
     height: 5vh;
     color: white;
@@ -13,22 +13,40 @@
 }
 .navigationList {
     width: 81vw;
+    display: flex;
+    justify-content: space-between;
 }
 .navigationText {
     margin-right: 2%;
+    margin-left: 2%;
 }
 li {
     display: inline-block;
     margin-left: 2%;
+}
+li:hover {
+    text-decoration: underline;
 }
 .media {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    background-color: rgba(88, 0, 0, 0.866);
+    width: 100vw;
+    height: 5vh;
 }
 .mediaList {
-    width: 90vw;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    font-size: large;
+}
+.mediaSymbol {
+    background-image: url("bellSymbol.jpg");
+    background-repeat: no-repeat;
+    background-color: rgb(208, 0, 0);
 }
 .logo {
     background-image: url("orf_logo.svg");
@@ -41,11 +59,10 @@ li {
     padding-left: 2vw;
     width: 100vw;
     height: 12vh;
-}
-.media {
-    background-color: rgb(162, 0, 0);
-    width: 100vw;
-    height: 5vh;
+    border-bottom: 10px;
+    border-style: solid;
+    border-color: rgb(255, 22, 22);
+    font-size: xx-large;
 }
 .textImage {
     background-image: url("orf_b1.jpg");
@@ -67,6 +84,12 @@ li {
     top: -30vh;
 }
 h1 {
-    font-size: large;
+    font-size: xx-large;
     font-weight: bold;
+    margin-bottom: 8px;
+}
+.textTag {
+    color: lightgrey;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
