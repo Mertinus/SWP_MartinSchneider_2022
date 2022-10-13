@@ -9,7 +9,7 @@ for (let row = 0; row < 6; row++) {
     let line = "";
     for (let col = 0; col < days.length; col++) {
         line += " | ";
-        if(row == 0) {
+        if (row == 0) {
             line += days[col];
         }
         else if ((dayCounter > 0 && dayCounter <= monthDays) &&
