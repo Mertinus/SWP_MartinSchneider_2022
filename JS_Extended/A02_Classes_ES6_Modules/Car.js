@@ -1,7 +1,7 @@
 export default class Car {
     horsepower = 100;
 
-    constructor(color, brand, country = "Germany") {
+    constructor(color = "red", brand = "ferrari", country = "Germany") {
         this.color = color;
         this.brand = brand;
         this.country = country;
