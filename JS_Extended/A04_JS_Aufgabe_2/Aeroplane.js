@@ -6,21 +6,17 @@ import SideRudder from './SideRudder.js';
 export default class Aeroplane {
     constructor() {
         this.turbines = [new Turbine(), new Turbine(), new Turbine(), new Turbine()];
-        this.tank = new Tank();
+        this.tank = new Tank(100);
         this.elevator = new Elevator();
         this.sideRudder = new SideRudder();
     }
 
     Accelerate(speed) {
+        //this.tank.level = this.tank.capacity;
         this.turbines.forEach(element => {
-            element.speed = speed;
+            element.Accelerate(speed);
+            this.tank.DecreaseFuelLevel(element.GetIntensity());
         });
-    }
-
-    PrintTurbineSpeed() {
-        this.turbines.forEach(element => {
-            console.log("Speed is " +element.speed);
-        });        
     }
 
     Up(angle) {
@@ -38,12 +34,15 @@ export default class Aeroplane {
     Right(angle) {
         this.sideRudder.Move(-angle);
     }
+
+    PrintFuelStatusAndIntensity() {
+        console.log("Tank-level is " + this.tank.GetStatus());
+        this.turbines.forEach(element => {
+            console.log("Intensity is " + element.GetIntensity());
+        });        
+    }
     
     PrintFlightPosition() {
-        console.log("Vertical angle: " + this.elevator.angle + " - Horizontal angle: " + this.sideRudder.angle);
-    }
-
-    GetFuelStatus() {
-
+        console.log("Vertical angle: " + this.elevator.GetStatus() + " - Horizontal angle: " + this.sideRudder.GetStatus());
     }
 }

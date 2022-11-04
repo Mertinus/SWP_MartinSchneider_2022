@@ -6,4 +6,8 @@ export default class SideRudder {
     Move(angle) {
         this.angle += angle;
     }
+
+    GetStatus() {
+        return this.angle;
+    }
 }

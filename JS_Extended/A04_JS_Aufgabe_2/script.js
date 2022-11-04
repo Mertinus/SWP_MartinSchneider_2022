@@ -11,6 +11,8 @@ a1.Right(15);
 
 a1.PrintFlightPosition();
 
-a1.PrintTurbineSpeed();
-a1.Accelerate(10);
-a1.PrintTurbineSpeed();
+a1.PrintFuelStatusAndIntensity();
+a1.Accelerate(20);
+a1.PrintFuelStatusAndIntensity();
+a1.Accelerate(20);
+a1.PrintFuelStatusAndIntensity();
