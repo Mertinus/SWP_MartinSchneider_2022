@@ -1,0 +1,12 @@
+.heading {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.button{
+    color: white;
+    font-size: large;
+    background-color: lawngreen;
+    width: 200px;
+    height: 100px;
+}

@@ -1,0 +1,22 @@
+.listDiv {
+    display: flex;
+    justify-content: center;
+}
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.listElement {
+    background-color: rgb(15, 120, 109);
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 30px;
+    margin: 5px;
+    color: white;
+    font-size: large;
+}
