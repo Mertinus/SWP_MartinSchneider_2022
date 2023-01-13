@@ -1,0 +1,43 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(red, yellow);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+h1 {
+    font-size: 7rem;
+    color: #d74035de;
+    margin: 10px;
+}
+.menue {
+    background-image: url('https://www.tagesspiegel.de/gesellschaft/panorama/images/jugendwort-des-jahres1/alternates/BASE_21_9_W2000/jugendwort-des-jahres.jpeg');
+    background-size: 100vw;
+    top: 0;
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.jugendwoerter {
+    margin-top: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list {
+    color: rgb(0, 0, 0);
+}
+.listElement {
+    border-width: 3pt;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+.listElement:hover {
+    background-color: rgb(227, 231, 233);
+}
